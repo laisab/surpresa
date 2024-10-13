@@ -1,0 +1,89 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #4682B4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 2.8rem;
+    text-align: center;
+    letter-spacing: 0.13rem;
+    color: #000000;
+}
+
+h2{
+    font-size: 1.3rem;
+    text-align: center;
+    letter-spacing: 0.10rem;
+    color: #000000;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    grid-template-columns: auto auto;
+    grid-gap: 1rem;
+}
+
+section button{
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #000000;
+    color: #F8F8FF;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #8B0000; 
+    color: #000000;
+}
+
+.imagem-estilizada{
+    width: 300px; 
+    height: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    display: block;
+}
+
+footer{
+    color: #000000;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px){
+    h1{
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+}
+
+@media (max-width: 480px){
+    h1{
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+    }
+
+    section button{
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
